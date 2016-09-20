@@ -42,7 +42,16 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns/a9fb530d-6270
       "donations": 1,
       "donated": 48
   },
-  "logo": "http://cdn.worldcoo.com/campaigns/8720fdd5-1b10-a4c8-a614-d437667dcea9/logos/logoexamplengo1.png"
+  "logo": "http://cdn.worldcoo.com/campaigns/8720fdd5-1b10-a4c8-a614-d437667dcea9/logos/logoexamplengo1.png",
+  "texts": {
+    "name_short": "Cmpgn 1",
+    "resume": "",
+    "activities": "",
+    "objectives": "",
+    "benefits": "",
+    "call_to_action": "",
+    "worldcoo_url": ""
+  }
 }
 ```
 
@@ -66,7 +75,7 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
 - **id** *string*
 - **name** *string*
 - **description** *string*
-- **location**
+- **location** *value map*
     - **country_code** *[CountryCode](#country-standar)*
     - **city_name** *string*
 - **[category](#campaign-categories)** *string*
@@ -74,7 +83,7 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
 - **[status](#campaign-statuses)** *string*
 - **languages** *[LanguageCode](#language-standar) list*
 - **currency** *[CurrencyCode](#currency-standar)*
-- **budget**
+- **budget** *value map*
     - **funding** *number*
     - **others** *number*
     - **transport** *number*
@@ -85,12 +94,20 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
     - **other_donations** *number*
     - **donations_in_ecommerce** *number*
     - **amount_in_ecommerce** *number*
-- **beneficiaries**
+- **beneficiaries** *value map*
   - **direct** *number*
   - **indirect** *number*
 - **starting_date** *[Date](#date-standar) | null*
 - **ending_date** *[Date](#date-standar) | null*
-- **counters**
+- **counters** *value map*
     - **donations** *number*. Number of donations received.
     - **donated** *number*. Amount received expressed in EUR.
 - **logo** *string*
+- **texts** *value map*
+    - **name_short** *string*
+    - **resume** *string*
+    - **activities** *string*
+    - **objectives** *string*
+    - **benefits** *string*
+    - **call_to_action** *string*
+    - **worldcoo_url** *string*
