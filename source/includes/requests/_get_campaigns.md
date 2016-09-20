@@ -18,7 +18,7 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns?limit=1
       "ngo_id": "2454de2c-cb31-44e5-83bd",
       "name": "NGO Campaign 1",
       "description": "This is an example of campaign description.",
-      "status": "active",
+      "status": "opened",
       "location": [
         {
           "country": "ESP",
@@ -34,14 +34,26 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns?limit=1
         "providers": 35000,
         "team": 5000
       },
-      "beneficiaries": 1500,
+      "beneficiaries": {
+        "direct": 400,
+        "indirect": 1000
+      },
       "starting_date": 1464277166,
       "ending_date": null,
       "counters": {
           "donations": 1,
           "donated": 48
       },
-      "logo": "http://cdn.worldcoo.com/campaigns/8720fdd5-1b10-a4c8-a614-d437667dcea9/logos/logoexamplengo1.png"
+      "logo": "http://cdn.worldcoo.com/campaigns/8720fdd5-1b10-a4c8-a614-d437667dcea9/logos/logoexamplengo1.png",
+      "texts": {
+        "name_short": "Cmpgn 1",
+        "resume": "",
+        "activities": "",
+        "objectives": "",
+        "benefits": "",
+        "call_to_action": "",
+        "worldcoo_url": ""
+      }
     }
   ],
   "total": 105,
@@ -78,7 +90,7 @@ limit | no | 20 | The maximum number of items to return.
 - **total** *number*
 - **offset** *number*
 - **limit** *number*
-- **items** *(list)*
+- **items** *list*
   - **id** *string*
   - **name** *string*
   - **description** *string*
