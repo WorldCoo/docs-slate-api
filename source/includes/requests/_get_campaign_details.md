@@ -38,7 +38,8 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns/a9fb530d-6270
   "counters": {
       "donations": 1,
       "donated": 48
-  }
+  },
+  "logo": "http://cdn.worldcoo.com/campaigns/8720fdd5-1b10-a4c8-a614-d437667dcea9/logos/logoexamplengo1.png"
 }
 ```
 
@@ -87,3 +88,4 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
 - **counters**
     - **donations** *number*. Number of donations received.
     - **donated** *number*. Amount received expressed in EUR.
+- **logo** *string*
