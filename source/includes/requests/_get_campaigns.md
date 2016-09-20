@@ -79,32 +79,42 @@ limit | no | 20 | The maximum number of items to return.
 - **offset** *number*
 - **limit** *number*
 - **items** *(list)*
-    - **id** *string*
-    - **name** *string*
-    - **description** *string*
-    - **location**
-        - **country_code** *[CountryCode](#country-standar)*
-        - **city_name** *string*
-    - **[category](#campaign-categories)** *string*
-    - **ngo_id** *string*
-    - **[status](#campaign-statuses)** *string*
-    - **languages** *[LanguageCode](#language-standar) list*
-    - **currency** *[CurrencyCode](#currency-standar)*
-    - **budget**
-        - **funding** *number*
-        - **others** *number*
-        - **transport** *number*
-        - **materials** *number*
-        - **providers** *number*
-        - **team** *number*
-        - **initial_funding** *number*
-        - **other_donations** *number*
-        - **donations_in_ecommerce** *number*
-        - **amount_in_ecommerce** *number*
-    - **beneficiaries** *number*
-    - **starting_date** *[Date](#date-standar) | null*
-    - **ending_date** *[Date](#date-standar) | null*
-    - **counters**
-        - **donations** *number*. Number of donations received.
-        - **donated** *number*. Amount received expressed in EUR.
-    - **logo** *string*
+  - **id** *string*
+  - **name** *string*
+  - **description** *string*
+  - **location** *value map*
+      - **country_code** *[CountryCode](#country-standar)*
+      - **city_name** *string*
+  - **[category](#campaign-categories)** *string*
+  - **ngo_id** *string*
+  - **[status](#campaign-statuses)** *string*
+  - **languages** *[LanguageCode](#language-standar) list*
+  - **currency** *[CurrencyCode](#currency-standar)*
+  - **budget** *value map*
+      - **funding** *number*
+      - **others** *number*
+      - **transport** *number*
+      - **materials** *number*
+      - **providers** *number*
+      - **team** *number*
+      - **initial_funding** *number*
+      - **other_donations** *number*
+      - **donations_in_ecommerce** *number*
+      - **amount_in_ecommerce** *number*
+  - **beneficiaries** *value map*
+    - **direct** *number*
+    - **indirect** *number*
+  - **starting_date** *[Date](#date-standar) | null*
+  - **ending_date** *[Date](#date-standar) | null*
+  - **counters** *value map*
+      - **donations** *number*. Number of donations received.
+      - **donated** *number*. Amount received expressed in EUR.
+  - **logo** *string*
+  - **texts** *value map*
+      - **name_short** *string*
+      - **resume** *string*
+      - **activities** *string*
+      - **objectives** *string*
+      - **benefits** *string*
+      - **call_to_action** *string*
+      - **worldcoo_url** *string*
