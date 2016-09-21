@@ -92,8 +92,7 @@ limit | no | 20 | The maximum number of items to return.
 - **limit** *number*
 - **items** *list*
   - **id** *string*
-  - **name** *string*
-  - **description** *string*
+  - **alias** *string*
   - **location** *value map*
       - **country_code** *[CountryCode](#country-standar)*
       - **city_name** *string*
@@ -102,7 +101,7 @@ limit | no | 20 | The maximum number of items to return.
   - **[status](#campaign-statuses)** *string*
   - **languages** *[LanguageCode](#language-standar) list*
   - **currency** *[CurrencyCode](#currency-standar)*
-  - **budget** *value map*
+  - **budget** *numbers map*
       - **funding** *number*
       - **others** *number*
       - **transport** *number*
@@ -111,18 +110,16 @@ limit | no | 20 | The maximum number of items to return.
       - **team** *number*
       - **initial_funding** *number*
       - **other_donations** *number*
-      - **donations_in_ecommerce** *number*
-      - **amount_in_ecommerce** *number*
-  - **beneficiaries** *value map*
+      - **donations_in_ecommerce** *number* Number of donations received.
+      - **amount_in_ecommerce** *number* Amount received expressed in EUR.
+  - **beneficiaries** *numbers map*
     - **direct** *number*
     - **indirect** *number*
   - **starting_date** *[Date](#date-standar) | null*
   - **ending_date** *[Date](#date-standar) | null*
-  - **counters** *value map*
-      - **donations** *number*. Number of donations received.
-      - **donated** *number*. Amount received expressed in EUR.
   - **logo** *string*
-  - **texts** *value map*
+  - **texts** *strings map* These are localized texts.
+      - **name** *string*
       - **name_short** *string*
       - **resume** *string*
       - **activities** *string*
