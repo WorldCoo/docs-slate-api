@@ -73,8 +73,7 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
 ##### Response body
 
 - **id** *string*
-- **name** *string*
-- **description** *string*
+- **alias** *string*
 - **location** *value map*
     - **country_code** *[CountryCode](#country-standar)*
     - **city_name** *string*
@@ -83,31 +82,29 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
 - **[status](#campaign-statuses)** *string*
 - **languages** *[LanguageCode](#language-standar) list*
 - **currency** *[CurrencyCode](#currency-standar)*
-- **budget** *value map*
-    - **funding** *number*
-    - **others** *number*
-    - **transport** *number*
-    - **materials** *number*
-    - **providers** *number*
-    - **team** *number*
-    - **initial_funding** *number*
-    - **other_donations** *number*
-    - **donations_in_ecommerce** *number*
-    - **amount_in_ecommerce** *number*
-- **beneficiaries** *value map*
+- **budget** *numbers map*
+  - **funding** *number*
+  - **others** *number*
+  - **transport** *number*
+  - **materials** *number*
+  - **providers** *number*
+  - **team** *number*
+  - **initial_funding** *number*
+  - **other_donations** *number*
+  - **donations_in_ecommerce** *number* Number of donations received.
+  - **amount_in_ecommerce** *number* Amount received expressed in EUR.
+- **beneficiaries** *numbers map*
   - **direct** *number*
   - **indirect** *number*
 - **starting_date** *[Date](#date-standar) | null*
 - **ending_date** *[Date](#date-standar) | null*
-- **counters** *value map*
-    - **donations** *number*. Number of donations received.
-    - **donated** *number*. Amount received expressed in EUR.
 - **logo** *string*
-- **texts** *value map*
-    - **name_short** *string*
-    - **resume** *string*
-    - **activities** *string*
-    - **objectives** *string*
-    - **benefits** *string*
-    - **call_to_action** *string*
-    - **worldcoo_url** *string*
+- **texts** *strings map* These are localized texts.
+  - **name** *string*
+  - **name_short** *string*
+  - **resume** *string*
+  - **activities** *string*
+  - **objectives** *string*
+  - **benefits** *string*
+  - **call_to_action** *string*
+  - **worldcoo_url** *string*
