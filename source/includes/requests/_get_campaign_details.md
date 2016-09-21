@@ -13,9 +13,8 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns/a9fb530d-6270
 ```json
 {
   "id": "a9fb530d-6270-0cc7-e8a8",
+  "alias": "Demo capaign",
   "ngo_id": "2454de2c-cb31-44e5-83bd",
-  "name": "NGO Campaign 1",
-  "description": "This is an example of campaign description.",
   "status": "opened",
   "location": [
     {
@@ -26,11 +25,16 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns/a9fb530d-6270
   "category": "children",
   "currency": "EUR",
   "budget": {
-    "total": 100000,
+    "funding": 100000,
+    "others": 10000,
     "transport": 50000,
     "materials": 10000,
     "providers": 35000,
-    "team": 5000
+    "team": 5000,
+    "initial_funding": 4000,
+    "other_donations": 200,
+    "donations_in_ecommerce": 3000,
+    "amount_in_ecommerce": 56
   },
   "beneficiaries": {
     "direct": 400,
@@ -38,14 +42,11 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns/a9fb530d-6270
   },
   "starting_date": 1464277166,
   "ending_date": null,
-  "counters": {
-      "donations": 1,
-      "donated": 48
-  },
   "logo": "http://cdn.worldcoo.com/campaigns/8720fdd5-1b10-a4c8-a614-d437667dcea9/logos/logoexamplengo1.png",
   "texts": {
+    "name": "NGO Campaign 1",
     "name_short": "Cmpgn 1",
-    "resume": "",
+    "resume": "This is an example of campaign description.",
     "activities": "",
     "objectives": "",
     "benefits": "",
