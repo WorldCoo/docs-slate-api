@@ -42,7 +42,12 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns/a9fb530d-6270
   },
   "starting_date": 1464277166,
   "ending_date": null,
-  "logo": "http://cdn.worldcoo.com/campaigns/8720fdd5-1b10-a4c8-a614-d437667dcea9/logos/logoexamplengo1.png",
+  "media": [
+      {
+        "location": "http://cdn.worldcoo.com/campaigns/8720fdd5-1b10-a4c8-a614/logos/logoexamplengo1.png",
+        "type": "image/png"
+      }
+  ],
   "texts": {
     "name": "NGO Campaign 1",
     "name_short": "Cmpgn 1",
@@ -99,7 +104,9 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
   - **indirect** *number*
 - **starting_date** *[Date](#date-standar) | null*
 - **ending_date** *[Date](#date-standar) | null*
-- **logo** *string*
+- **media** *list* Linked media resources
+  - **type** *string* MIME Type of the linked resource.
+  - **location** *string* URI of the linked resource.
 - **texts** *strings map* These are localized texts.
   - **name** *string*
   - **name_short** *string*
