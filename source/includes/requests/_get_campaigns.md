@@ -49,7 +49,7 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns?limit=1
             "location": "http://cdn.worldcoo.com/campaigns/8720fdd5-1b10-a4c8-a614/logos/logoexamplengo1.png",
             "type": "image/png"
           }
-      ]
+      ],
       "texts": {
         "name": "NGO Campaign 1",
         "name_short": "Cmpgn 1",
