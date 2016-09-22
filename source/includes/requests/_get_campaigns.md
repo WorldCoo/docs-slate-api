@@ -120,8 +120,8 @@ limit | no | 20 | The maximum number of items to return.
     - **team** *number*
     - **initial_funding** *number*
     - **other_donations** *number*
-    - **donations_in_ecommerce** *number* Number of donations received.
-    - **amount_in_ecommerce** *number* Amount received expressed in EUR.
+    - **donations_in_ecommerce** *number*
+    - **amount_in_ecommerce** *number*
   - **beneficiaries** *numbers map*
     - **direct** *number*
     - **indirect** *number*
