@@ -48,6 +48,10 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns/a9fb530d-6270
         "type": "image/png"
       }
   ],
+  "counters": {
+    "donors": 467,
+    "donated": 5035
+  },
   "texts": {
     "name": "NGO Campaign 1",
     "name_short": "Cmpgn 1",
@@ -81,8 +85,8 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
 - **id** *string*
 - **alias** *string*
 - **location** *value map*
-    - **country_code** *[CountryCode](#country-standar)*
-    - **city_name** *string*
+  - **country_code** *[CountryCode](#country-standar)*
+  - **city_name** *string*
 - **[category](#campaign-categories)** *string*
 - **ngo_id** *string*
 - **[status](#campaign-statuses)** *string*
@@ -107,6 +111,9 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
 - **media** *list* Linked media resources
   - **type** *string* MIME Type of the linked resource.
   - **location** *string* URI of the linked resource.
+- **counters** *numbers map* Campaign current funding.
+  - **donors** *number*
+  - **donated** *number*
 - **texts** *strings map* These are localized texts.
   - **name** *string*
   - **name_short** *string*
