@@ -130,7 +130,7 @@ limit | no | 20 | The maximum number of items to return.
   - **media** *list* Linked media resources
     - **type** *string* MIME Type of the linked resource.
     - **location** *string* URI of the linked resource.
-  - - **counters** *numbers map* Campaign current funding.
+  - **counters** *numbers map* Campaign current funding.
     - **donors** *number*
     - **donated** *number*
   - **texts** *strings map* These are localized texts.
