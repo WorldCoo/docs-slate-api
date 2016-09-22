@@ -119,13 +119,13 @@ limit | no | 20 | The maximum number of items to return.
       - **donations_in_ecommerce** *number* Number of donations received.
       - **amount_in_ecommerce** *number* Amount received expressed in EUR.
   - **beneficiaries** *numbers map*
-    - **direct** *number*
-    - **indirect** *number*
+      - **direct** *number*
+      - **indirect** *number*
   - **starting_date** *[Date](#date-standar) | null*
   - **ending_date** *[Date](#date-standar) | null*
   - **media** *list* Linked media resources
-    - **type** *string* MIME Type of the linked resource.
-    - **location** *string* URI of the linked resource.
+      - **type** *string* MIME Type of the linked resource.
+      - **location** *string* URI of the linked resource.
   - **texts** *strings map* These are localized texts.
       - **name** *string*
       - **name_short** *string*
