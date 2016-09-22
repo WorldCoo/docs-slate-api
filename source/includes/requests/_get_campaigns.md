@@ -50,6 +50,10 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns?limit=1
             "type": "image/png"
           }
       ],
+      "counters": {
+        "donors": 467,
+        "donated": 5035
+      },
       "texts": {
         "name": "NGO Campaign 1",
         "name_short": "Cmpgn 1",
@@ -100,38 +104,41 @@ limit | no | 20 | The maximum number of items to return.
   - **id** *string*
   - **alias** *string*
   - **location** *value map*
-      - **country_code** *[CountryCode](#country-standar)*
-      - **city_name** *string*
+    - **country_code** *[CountryCode](#country-standar)*
+    - **city_name** *string*
   - **[category](#campaign-categories)** *string*
   - **ngo_id** *string*
   - **[status](#campaign-statuses)** *string*
   - **languages** *[LanguageCode](#language-standar) list*
   - **currency** *[CurrencyCode](#currency-standar)*
   - **budget** *numbers map*
-      - **funding** *number*
-      - **others** *number*
-      - **transport** *number*
-      - **materials** *number*
-      - **providers** *number*
-      - **team** *number*
-      - **initial_funding** *number*
-      - **other_donations** *number*
-      - **donations_in_ecommerce** *number* Number of donations received.
-      - **amount_in_ecommerce** *number* Amount received expressed in EUR.
+    - **funding** *number*
+    - **others** *number*
+    - **transport** *number*
+    - **materials** *number*
+    - **providers** *number*
+    - **team** *number*
+    - **initial_funding** *number*
+    - **other_donations** *number*
+    - **donations_in_ecommerce** *number* Number of donations received.
+    - **amount_in_ecommerce** *number* Amount received expressed in EUR.
   - **beneficiaries** *numbers map*
-      - **direct** *number*
-      - **indirect** *number*
+    - **direct** *number*
+    - **indirect** *number*
   - **starting_date** *[Date](#date-standar) | null*
   - **ending_date** *[Date](#date-standar) | null*
   - **media** *list* Linked media resources
-      - **type** *string* MIME Type of the linked resource.
-      - **location** *string* URI of the linked resource.
+    - **type** *string* MIME Type of the linked resource.
+    - **location** *string* URI of the linked resource.
+  - - **counters** *numbers map* Campaign current funding.
+    - **donors** *number*
+    - **donated** *number*
   - **texts** *strings map* These are localized texts.
-      - **name** *string*
-      - **name_short** *string*
-      - **resume** *string*
-      - **activities** *string*
-      - **objectives** *string*
-      - **benefits** *string*
-      - **call_to_action** *string*
-      - **worldcoo_url** *string*
+    - **name** *string*
+    - **name_short** *string*
+    - **resume** *string*
+    - **activities** *string*
+    - **objectives** *string*
+    - **benefits** *string*
+    - **call_to_action** *string*
+    - **worldcoo_url** *string*
