@@ -92,7 +92,7 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
 - **[status](#campaign-statuses)** *string*
 - **languages** *[LanguageCode](#language-standar) list*
 - **currency** *[CurrencyCode](#currency-standar)*
-- **budget** *numbers map*
+- **budget** *numbers map* 
   - **funding** *number*
   - **others** *number*
   - **transport** *number*
@@ -101,8 +101,8 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
   - **team** *number*
   - **initial_funding** *number*
   - **other_donations** *number*
-  - **donations_in_ecommerce** *number* Number of donations received.
-  - **amount_in_ecommerce** *number* Amount received expressed in EUR.
+  - **donations_in_ecommerce** *number*
+  - **amount_in_ecommerce** *number*
 - **beneficiaries** *numbers map*
   - **direct** *number*
   - **indirect** *number*
