@@ -82,7 +82,7 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns?limit=1
 Header name | Required | default | Description
 ---------- | ------- | ------- | -------
 Authorization | yes | NA | Authorization token provided by WorldCoo
-[Accept-Language](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4) | No | en | iso 639-2/b language code.
+[Accept-Language](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4) | No | ENG | iso 639-2/b language code.
 
 #### Query params
 
