@@ -55,7 +55,7 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns/a9fb530d-6270
   "texts": {
     "name": "NGO Campaign 1",
     "name_short": "Cmpgn 1",
-    "resume": "This is an example of campaign description.",,
+    "resume": "This is an example of campaign description.",
     "resume_short": "campaign description"
     "activities": "",
     "objectives": "",
