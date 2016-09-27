@@ -58,6 +58,7 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns?limit=1
         "name": "NGO Campaign 1",
         "name_short": "Cmpgn 1",
         "resume": "This is an example of campaign description.",
+        "resume_short": "CampaignDescription",
         "activities": "",
         "objectives": "",
         "benefits": "",
@@ -137,6 +138,7 @@ limit | no | 20 | The maximum number of items to return.
       - **name** *string*
       - **name_short** *string*
       - **resume** *string*
+      - **resume_short** *string*
       - **activities** *string*
       - **objectives** *string*
       - **benefits** *string*
