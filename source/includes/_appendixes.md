@@ -2,13 +2,13 @@
 
 ## <a name="campaign-categories"></a>Campaign categories
 
-- **natural_resources**
+- **water_and_energy**
 - **human_rights**
 - **education**
 - **emergency**
-- **general**
+- **hunger_and_food_security**
 - **environment**
-- **basic_needs**
+- **water_and_energy**
 - **health**
 
 ## <a name="campaign-statuses"></a>Campaign status
