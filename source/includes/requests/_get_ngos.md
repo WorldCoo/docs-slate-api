@@ -17,14 +17,66 @@ https://api.worldcoo.com/v3/ngos?limit=2&offset=10
                 "id": "8720fdd5-1b10-a4c8-a614",
                 "name": "NGO Name Example 1",
                 "url": "http://www.examplengo1.com",
-                "logo": "http://cdn.worldcoo.com/ngo/8720fdd5-1b10-a4c8-a614-d437667dcea9/logos/logoexamplengo1.png",
+                "logo": {
+                    "height": 533,
+                    "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/logo.1479742005411.original.jpg",
+                    "width": 800,
+                    "type": "image/jpeg",
+                    "versions": {
+                        "S": {
+                            "height": 50,
+                            "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/logo.1479742005411.S.jpg",
+                            "width": 75,
+                            "type": "image/jpeg"
+                        },
+                        "L": {
+                            "height": 200,
+                            "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/logo.1479742005411.L.jpg",
+                            "width": 300,
+                            "type": "image/jpeg"
+                        },
+                        "M": {
+                            "height": 100,
+                            "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/logo.1479742005411.M.jpg",
+                            "width": 150,
+                            "type": "image/jpeg"
+                        }
+                    }
+                },
+                "media": {},
                 "description": "This is an example of NGO description."
             },
             {
                 "id": "79a3b10a-3c84-a19a-5e07",
                 "name": "NGO Name Example 2",
                 "url": "http://www.examplengo2.com",
-                "logo": "http://cdn.worldcoo.com/ngo/79a3b10a-3c84-a19a-5e07-12319c2bee6b/logos/logoexamplengo2.png",
+                "logo": {
+                    "height": 533,
+                    "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/logo.1479742005411.original.jpg",
+                    "width": 800,
+                    "type": "image/jpeg",
+                    "versions": {
+                        "S": {
+                            "height": 50,
+                            "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/logo.1479742005411.S.jpg",
+                            "width": 75,
+                            "type": "image/jpeg"
+                        },
+                        "L": {
+                            "height": 200,
+                            "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/logo.1479742005411.L.jpg",
+                            "width": 300,
+                            "type": "image/jpeg"
+                        },
+                        "M": {
+                            "height": 100,
+                            "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/logo.1479742005411.M.jpg",
+                            "width": 150,
+                            "type": "image/jpeg"
+                        }
+                    }
+                },
+                "media": {},
                 "description": "This is an example of NGO description."
             }
     ],
@@ -62,8 +114,19 @@ limit | no | 20 | The maximum number of items to return.
 - **offset** *number*
 - **limit** *number*
 - **items** *list*
-    - **id** *string*
-    - **name** *string*
-    - **url** *string*
-    - **logo** *string*
-    - **description** *string*
+  - **id** *string*
+  - **name** *string*
+  - **url** *string*
+  - **logo** *logo map*
+        - **type** *string*
+        - **location** *string*
+        - **width** *number*
+        - **height** *number*
+        - **versions** *versions map*
+            - **version_key** *string*
+                - **type** *string*
+                - **location** *string*
+                - **width** *number*
+                - **height** *number*
+  - **media** *media map*
+  - **description** *string*

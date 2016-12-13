@@ -44,12 +44,72 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns?limit=1
       },
       "starting_date": 1464277166,
       "ending_date": null,
-      "media": [
-          {
-            "location": "http://cdn.worldcoo.com/campaigns/8720fdd5-1b10-a4c8-a614/logos/logoexamplengo1.png",
-            "type": "image/png"
+      "media": {
+          "eaba63b5-d7be-4de8-a53e-283c9104a9a6": {
+              "versions": {
+                  "S": {
+                      "height": 200,
+                      "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/campaigns/f6425839-1e6f-4dd2-8d4d-593d61f5437f/media/eaba63b5-d7be-4de8-a53e-283c9104a9a6.1479739685956.S.jpg",
+                      "width": 150,
+                      "type": "image/jpeg"
+                  },
+                  "L": {
+                      "height": 800,
+                      "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/campaigns/f6425839-1e6f-4dd2-8d4d-593d61f5437f/media/eaba63b5-d7be-4de8-a53e-283c9104a9a6.1479739685956.L.jpg",
+                      "width": 600,
+                      "type": "image/jpeg"
+                  },
+                  "M": {
+                      "height": 400,
+                      "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/campaigns/f6425839-1e6f-4dd2-8d4d-593d61f5437f/media/eaba63b5-d7be-4de8-a53e-283c9104a9a6.1479739685956.M.jpg",
+                      "width": 300,
+                      "type": "image/jpeg"
+                  },
+                  "XL": {
+                      "height": 1599,
+                      "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/campaigns/f6425839-1e6f-4dd2-8d4d-593d61f5437f/media/eaba63b5-d7be-4de8-a53e-283c9104a9a6.1479739685956.XL.jpg",
+                      "width": 1200,
+                      "type": "image/jpeg"
+                  }
+              },
+              "height": 1354,
+              "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/campaigns/f6425839-1e6f-4dd2-8d4d-593d61f5437f/media/eaba63b5-d7be-4de8-a53e-283c9104a9a6.1479739685956.original.jpg",
+              "width": 1016,
+              "type": "image/jpeg"
+          },
+          "89bfea45-5704-4e4b-9aab-b80c3ac1fa9c": {
+              "versions": {
+                  "S": {
+                      "height": 107,
+                      "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/campaigns/f6425839-1e6f-4dd2-8d4d-593d61f5437f/media/89bfea45-5704-4e4b-9aab-b80c3ac1fa9c.1479739676674.S.jpg",
+                      "width": 150,
+                      "type": "image/jpeg"
+                  },
+                  "L": {
+                      "height": 426,
+                      "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/campaigns/f6425839-1e6f-4dd2-8d4d-593d61f5437f/media/89bfea45-5704-4e4b-9aab-b80c3ac1fa9c.1479739676674.L.jpg",
+                      "width": 600,
+                      "type": "image/jpeg"
+                  },
+                  "M": {
+                      "height": 213,
+                      "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/campaigns/f6425839-1e6f-4dd2-8d4d-593d61f5437f/media/89bfea45-5704-4e4b-9aab-b80c3ac1fa9c.1479739676674.M.jpg",
+                      "width": 300,
+                      "type": "image/jpeg"
+                  },
+                  "XL": {
+                      "height": 852,
+                      "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/campaigns/f6425839-1e6f-4dd2-8d4d-593d61f5437f/media/89bfea45-5704-4e4b-9aab-b80c3ac1fa9c.1479739676674.XL.jpg",
+                      "width": 1200,
+                      "type": "image/jpeg"
+                  }
+              },
+              "height": 852,
+              "location": "https://cdn.worldcoo.com/ngos/ee80cf92-d49b-4b7c-9949-9946750ec451/campaigns/f6425839-1e6f-4dd2-8d4d-593d61f5437f/media/89bfea45-5704-4e4b-9aab-b80c3ac1fa9c.1479739676674.original.jpg",
+              "width": 1200,
+              "type": "image/jpeg"
           }
-      ],
+      },
       "counters": {
         "donors": 467,
         "donated": 5035
@@ -128,9 +188,18 @@ limit | no | 20 | The maximum number of items to return.
       - **indirect** *number*
   - **starting_date** *[Date](#date-standar) | null*
   - **ending_date** *[Date](#date-standar) | null*
-  - **media** *list* Linked media resources
-      - **type** *string* MIME Type of the linked resource.
-      - **location** *string* URI of the linked resource.
+  - **media** *media map* Linked media resources
+      - **media_id** *string*
+          - **type** *string*
+          - **location** *string*
+          - **width** *number*
+          - **height** *number*
+          - **versions** *versions map*
+            - **version_key** *string*
+                - **type** *string*
+                - **location** *string*
+                - **width** *number*
+                - **height** *number*
   - **counters** *numbers map* Campaign current funding.
       - **donors** *number*
       - **donated** *number*
