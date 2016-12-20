@@ -25,7 +25,7 @@ https://api.worldcoo.com/v3/donations
 }
 ```
 
-`POST https://api.worldcoo.com/v3/ngos/donations`
+`POST https://api.worldcoo.com/v3/donations`
 
 ### Request
 
