@@ -7,6 +7,7 @@ includes:
   - requests/get_campaign_details
   - requests/add_donation
   - requests/cancel_donation
+  - requests/request_certificate
   - appendixes
 
 language_tabs:
