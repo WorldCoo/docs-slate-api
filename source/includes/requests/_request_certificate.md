@@ -30,24 +30,7 @@ https://api.worldcoo.com/v3/certificates
 > Example of certificate request response:
 
 ```json
-{
-    "donation_id": "a9fb530d-6270-0cc7-e8a8",
-    "donor_name": "John",
-    "donor_lastname": "Doe",
-    "donor_email": "johndoe@worldcoo.com",
-    "donor_documentType": "id",
-    "donor_documentNumber": "12345678Z",
-    "donor_streetType": "Street",
-    "donor_streetName": "Riera de Sant Miquel",
-    "donor_streetNumber": "26",
-    "donor_phone": "+34698726252",
-    "donor_postalCode": "08008",
-    "donor_city": "Barcelona",
-    "donor_province": "Barcelona",
-    "donor_country": "Spain",
-    "donor_isCompany": false
-    "donor_companyName": "John & Sons"
-    }
+{"request": "success"}
 ```
 
 `PUT https://api.worldcoo.com/v3/certificates`
