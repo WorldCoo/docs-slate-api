@@ -3,7 +3,7 @@
 > Example of certificate request call:
 
 ```shell
-curl -X POST
+curl -X PUT
 -H "Authorization: <ACCESS_TOKEN>"
 -H "Content-Type: application/json"
 https://api.worldcoo.com/v3/certificates
@@ -38,7 +38,7 @@ https://api.worldcoo.com/v3/certificates
 }
 ```
 
-`POST https://api.worldcoo.com/v3/certificates`
+`PUT https://api.worldcoo.com/v3/certificates`
 
 ### Request
 
@@ -59,9 +59,9 @@ donor_lastname | yes | NA | Lastname of the donor
 donor_email | yes | NA | Email of the donor
 donor_documentType | yes | NA | Value map: "id", "taxid", "passport", "others"
 donor_documentNumber | yes | NA | Donor document ID number
-donor_directionType | yes | NA | Direction type of the direction
-donor_directionName | yes | NA | Direction name of the donor
-donor_directionNumber | yes | NA | Direction number of the donor
+donor_streetType | yes | NA | Direction type of the direction
+donor_streetName | yes | NA | Direction name of the donor
+donor_streetNumber | yes | NA | Direction number of the donor
 donor_stairs | no | NA | Direction stairs for the donor
 donor_floor | no | NA | Direction floor for the donor
 donor_door | no | NA | Direction door for the donor
@@ -78,6 +78,8 @@ donor_companyName | no | NA | If this is a company related certificate, his name
 ### Response
 
 `201 Created`
+
+`200 Success`
 
 ##### Body
 - **request** *string* "success" | "missing fields"
