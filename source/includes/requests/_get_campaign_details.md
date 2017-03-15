@@ -20,7 +20,7 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns/a9fb530d-6270
     "country_code": "ESP",
     "city_name": "Barcelona"
   },
-  "category": "water_and_energy",
+  "categories": ["water_and_energy"],
   "currency": "EUR",
   "budget": {
     "funding": 100000,
