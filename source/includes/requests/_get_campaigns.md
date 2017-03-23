@@ -24,17 +24,15 @@ https://api.worldcoo.com/v3/ngos/2454de2c-cb31-44e5-83bd/campaigns?limit=1
       },
       "categories": ["water_and_energy"],
       "currency": "EUR",
-      "budget": {
-        "funding": 100000,
-        "others": 10000,
-        "transport": 50000,
-        "materials": 10000,
-        "providers": 35000,
-        "team": 5000,
-        "initial_funding": 4000,
-        "other_donations": 200,
-        "donations_in_ecommerce": 3000,
-        "amount_in_ecommerce": 56
+      "collection_objective": {
+          "total": 500,
+          "distribution": {
+              "materials": 100,
+              "team": 100,
+              "transport": 50,
+              "others": 200,
+              "providers": 50
+          }
       },
       "beneficiaries": {
         "direct": 400,
@@ -170,17 +168,14 @@ limit | no | 20 | The maximum number of items to return.
   - **[status](#campaign-statuses)** *string*
   - **languages** *[LanguageCode](#language-standar) list*
   - **currency** *[CurrencyCode](#currency-standar)*
-  - **budget** *numbers map*
-      - **funding** *number*
-      - **others** *number*
-      - **transport** *number*
-      - **materials** *number*
-      - **providers** *number*
-      - **team** *number*
-      - **initial_funding** *number*
-      - **other_donations** *number*
-      - **donations_in_ecommerce** *number*
-      - **amount_in_ecommerce** *number*
+  - **collection_objective** *numbers map*
+      - **total** *number*
+      - **distribution** *numbers map*
+          - **materials** *number*
+          - **team** *number*
+          - **transport** *number*
+          - **others** *number*
+          - **providers** *number*
   - **beneficiaries** *numbers map*
       - **direct** *number*
       - **indirect** *number*
