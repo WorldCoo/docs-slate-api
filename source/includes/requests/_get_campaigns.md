@@ -163,7 +163,7 @@ limit | no | 20 | The maximum number of items to return.
   - **location** *value map*
       - **country_code** *[CountryCode](#country-standar)*
       - **city_name** *string*
-  - **[categories](#campaign-categories)** *string list*
+  - **categories** *[Category](#campaign-categories) list*
   - **ngo_id** *string*
   - **[status](#campaign-statuses)** *string*
   - **languages** *[LanguageCode](#language-standar) list*
