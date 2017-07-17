@@ -8,7 +8,7 @@
 - **emergency**
 - **hunger_and_food_security**
 - **environment**
-- **water_and_energy**
+- **habitat_and_poverty**
 - **health**
 
 ## <a name="campaign-statuses"></a>Campaign status
