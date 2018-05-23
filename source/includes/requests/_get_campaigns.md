@@ -206,3 +206,5 @@ limit | no | 20 | The maximum number of items to return.
       - **benefits** *string*
       - **call_to_action** *string*
       - **worldcoo_url** *string*
+### Errors
+- **404 ngoNotFound**: ngo with id '${id}' doesn't exists
