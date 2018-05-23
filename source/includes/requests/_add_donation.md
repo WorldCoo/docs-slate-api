@@ -55,3 +55,9 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
 - **campaign_counters**
     - **total_donated** *number*. Amount received expressed in EUR.
     - **target** *number*. Target amount expressed in EUR.
+### Errors:
+- 401 unauthorizedCampaign: `You have not access to that campaign`
+- 404 campaignNotFound: `campaign with id '${entityId}' doesn't exists`
+- 422 campaignNotStarted: `The campaign you are attempting to access is not started`
+- 422 campaignFunded: `The campaign you are attempting to access is funded`
+- 422 campaignDisabled: `The campaign you are attempting to access is disabled`
