@@ -187,3 +187,8 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
   - **benefits** *string*
   - **call_to_action** *string*
   - **worldcoo_url** *string*
+  
+### Errors:
+- 404: `Ngo not found`
+- 404: `campaign with id '${entityId}' doesn't exists`
+- 409: `You have not access to that campaign`
