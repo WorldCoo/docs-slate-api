@@ -189,6 +189,9 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
   - **worldcoo_url** *string*
 
 ### Errors:
+
+[error responses reference](#errors)
+
 HTTP Code | type | message
 --------- | ---- | -------
 401 | unauthorizedCampaign | *You have not access to that campaign*
