@@ -82,3 +82,8 @@ donor_company_name | no | NA | If this is a company related certificate, his nam
 ### Errors:
 
 [error responses reference](#errors)
+
+
+HTTP Code | type | message
+--------- | ---- | -------
+500 | **system** | *An error occurred while processing your request*
