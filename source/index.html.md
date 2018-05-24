@@ -89,47 +89,16 @@ The WorldCoo Donation API uses token-based authentication with Authorization hea
 
 # HTTP errors
 
-## 400 Bad Request
+When a error occurs, a JSON format response is returned with the http error code, the Worldcoo error code, the error message and the request id (for technical support).
 
-### Body
+> Example of a 401 error response:
 
-#### application/json
-
-- **error_message** *string*: Description of the error occurred.
-- **fields** *map*: A map of request body params errors
-- **request_id** *string*: Required for technical assistance
-
-> Example of Bad Request response:
-
-```json
+```shell
 {
-  "error_message": "",
-  "request_id": "f3c09088-472d-4224-b52f",
-  "fields": {
-    "amount": "Should be a positive amount"
-  }
+  "type": "unauthorizedCampaign",
+  "message": "You have not access to that campaign",
+  "request-id": "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 }
 ```
-
-## 401 Unauthorized
-
-### Body
-
-- **error_message** *string*: Description of the error occurred.
-- **request_id** *string*: Required for technical assistance
-
-## 404 Not Found
-
-### Body
-
-- **error_message** *string*: Description of the error occurred.
-- **request_id** *string*: Required for technical assistance
-
-## 500 Internal Server Error
-
-### Body
-
-- **error_message** *string*: Description of the error occurred.
-- **request_id** *string*: Required for technical assistance
 
 # Requests
