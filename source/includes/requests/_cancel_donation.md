@@ -40,4 +40,6 @@ https://api.worldcoo.com/v3/donations/{{donation_id}}
     - **target** *number*. Target amount expressed in EUR.
 
 ### Errors
-- **404 donationNotFound** donation with id '{id}' doesn't exists
+HTTP Code | type | message
+--------- | ---- | -------
+404 | donationNotFound | *donation with id '{id}' doesn't exists*
