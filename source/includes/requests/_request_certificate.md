@@ -81,7 +81,7 @@ donor_company_name | no | NA | If this is a company related certificate, his nam
 
 ### Errors:
 
-[error responses reference](#errors)
+[error responses reference](#errors-response-reference)
 
 
 HTTP Code | type | message
