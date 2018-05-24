@@ -130,3 +130,7 @@ limit | no | 20 | The maximum number of items to return.
                 - **height** *number*
   - **media** *media map*
   - **description** *string*
+
+### Errors:
+
+[error responses reference](#errors)
