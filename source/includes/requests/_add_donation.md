@@ -55,6 +55,7 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
 - **campaign_counters**
     - **total_donated** *number*. Amount received expressed in EUR.
     - **target** *number*. Target amount expressed in EUR.
+    
 ### Errors:
 - **401 unauthorizedCampaign**: You have not access to that campaign
 - **404 campaignNotFound**: campaign with id '${entityId}' doesn't exists
