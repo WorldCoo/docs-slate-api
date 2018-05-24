@@ -208,6 +208,9 @@ limit | no | 20 | The maximum number of items to return.
       - **worldcoo_url** *string*
 
 ### Errors
+
+[error responses reference](#errors)
+
 HTTP Code | type | message
 --------- | ---- | -------
 404 | ngoNotFound | *ngo with id '{id}' doesn't exists*
