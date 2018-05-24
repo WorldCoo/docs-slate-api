@@ -87,6 +87,8 @@ Prior to the Onboarding process, WorldCoo will provide you with a a set of crede
 </aside>
 The WorldCoo Donation API uses token-based authentication with Authorization header following RFC 2617. All communications to this API must provide well-formed and active credentials. Any unauthorized access will result in 401 (Unauthorized) response code and further attempts may incur an automatic IP ban.
 
+<a name="errors"></a>
+
 # HTTP errors
 
 When a error occurs, a JSON format response is returned with the http error code, the Worldcoo error code, the error message and the request id (for technical support).
