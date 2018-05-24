@@ -194,6 +194,7 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
 
 HTTP Code | type | message
 --------- | ---- | -------
-401 | unauthorizedCampaign | *You have not access to that campaign*
-404 | ngoNotFound | *ngo with id '{id}' doesn't exists*
-404 | campaignNotFound | *campaign with id '{id}' doesn't exists*
+401 | **unauthorizedCampaign** | *You have not access to that campaign*
+404 | **ngoNotFound** | *ngo with id '{id}' doesn't exists*
+404 | **campaignNotFound** | *campaign with id '{id}' doesn't exists*
+500 | **system** | *An error occurred while processing your request*
