@@ -57,6 +57,7 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
     - **target** *number*. Target amount expressed in EUR.
     
 ### Errors:
+
 [error responses reference](#errors)
 
 HTTP Code | type | message
