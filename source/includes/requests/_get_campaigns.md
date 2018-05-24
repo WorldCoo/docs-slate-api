@@ -213,4 +213,5 @@ limit | no | 20 | The maximum number of items to return.
 
 HTTP Code | type | message
 --------- | ---- | -------
-404 | ngoNotFound | *ngo with id '{id}' doesn't exists*
+404 | **ngoNotFound** | *ngo with id '{id}' doesn't exists*
+500 | **system** | *An error occurred while processing your request*
