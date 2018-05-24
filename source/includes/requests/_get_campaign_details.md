@@ -187,7 +187,7 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
   - **benefits** *string*
   - **call_to_action** *string*
   - **worldcoo_url** *string*
-  
+
 ### Errors:
 - **401 unauthorizedCampaign**: `You have not access to that campaign`
 - **404 ngoNotFound**: `ngo with id '${id}' doesn't exists`
