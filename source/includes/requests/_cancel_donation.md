@@ -41,7 +41,7 @@ https://api.worldcoo.com/v3/donations/{{donation_id}}
 
 ### Errors
 
-[error responses reference](#errors)
+[error responses reference](#errors-response-reference)
 
 HTTP Code | type | message
 --------- | ---- | -------
