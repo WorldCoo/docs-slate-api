@@ -133,7 +133,7 @@ limit | no | 20 | The maximum number of items to return.
 
 ### Errors:
 
-[error responses reference](#errors)
+[error responses reference](#errors-response-reference)
 
 
 HTTP Code | type | message
