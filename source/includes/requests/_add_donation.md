@@ -58,7 +58,7 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
     
 ### Errors:
 
-[error responses reference](#errors)
+[error responses reference](#errors-response-reference)
 
 HTTP Code | type | message
 --------- | ---- | -------
