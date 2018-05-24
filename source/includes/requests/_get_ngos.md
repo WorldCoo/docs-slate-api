@@ -134,3 +134,8 @@ limit | no | 20 | The maximum number of items to return.
 ### Errors:
 
 [error responses reference](#errors)
+
+
+HTTP Code | type | message
+--------- | ---- | -------
+500 | **system** | *An error occurred while processing your request*
