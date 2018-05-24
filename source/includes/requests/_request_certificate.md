@@ -78,3 +78,7 @@ donor_company_name | no | NA | If this is a company related certificate, his nam
 
 ##### Body
 - **request** *string* "success" | "missing fields"
+
+### Errors:
+
+[error responses reference](#errors)
