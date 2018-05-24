@@ -45,5 +45,5 @@ https://api.worldcoo.com/v3/donations/{{donation_id}}
 
 HTTP Code | type | message
 --------- | ---- | -------
-404 | donationNotFound | *donation with id '{id}' doesn't exists*
+404 | **donationNotFound** | *donation with id '{id}' doesn't exists*
 500 | **system** | *An error occurred while processing your request*
