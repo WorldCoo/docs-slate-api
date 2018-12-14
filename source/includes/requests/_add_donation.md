@@ -18,6 +18,11 @@ https://api.worldcoo.com/v3/donations
     "amount": 5,
     "currency": "EUR",
     "order_code": "9638467",
+    "relations": {
+        "campaign": {
+            "id": "37257fed-37ba-44eb-9cde"
+        }
+    },
     "campaign_counters": {
         "total_donated": 60,
         "target": 50000
@@ -52,6 +57,9 @@ Authorization | yes | NA | Authorization token provided by WorldCoo
 - **amount** *number*
 - **currency** *[CurrencyCode](#currency-standar)*
 - **order_code** *string*
+- **relations**
+    - **campaign**
+        - **id** *string*
 - **campaign_counters**
     - **total_donated** *number*. Amount received expressed in EUR.
     - **target** *number*. Target amount expressed in EUR.
